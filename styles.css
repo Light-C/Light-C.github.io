@@ -1,0 +1,341 @@
+/* Set navigation bar position */
+.nav {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: black;
+    opacity: 0.5;
+
+}
+
+
+/* Set the color of the navigation bar label */
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    text-align: center;
+
+}
+
+/* Set each list to distribute the container width equally */
+.nav li {
+    flex: 1;
+
+}
+
+/* Set the style of the navigation bar a */
+.nav li a {
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Mouse hover to change color */
+.nav li a:hover {
+    color: #e21898;
+}
+
+/* set search location */
+.search {
+
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   
+
+}
+
+/* set search input style */
+.search input[type="text"] {
+
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin-left: 20%;
+
+}
+
+/* set search button style,size */
+.search button[type="submit"] {
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.search h1 {
+
+    text-align: center;
+    font-style: italic;
+    font-family: 'Alkatra', cursive;
+}
+
+/* let background  video on the bottom of the website and fixed it size and location  */
+.background-video {
+
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: -1;
+    object-fit: cover;
+
+}
+
+/* in order to avoide to overlap video, set a blank gap form the top to below element */
+.blank {
+    margin-top: 100vh;
+}
+
+/* let text display on the center */
+.recommend-text {
+
+    text-align: center;
+}
+
+/* The flex property is a shorthand form of the flex-grow, flex-shrink, and flex-basis properties. */
+
+.video-container {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+/* flex: 0 1 150px; means that the initial width of the item is 150px and cannot be expanded, but when the container is less than 150px wide, the item can be shrunk.
+If it is written as flex: 1 1 150px;, it means that the item will always take up the full width. */
+.video-text {
+    flex: 0 1 150px;
+    margin: 20px;
+}
+
+.video-description {
+    text-align: center;
+
+
+}
+
+/* set text color */
+.video-description p {
+    color: #000;
+
+}
+
+/* set video size, mouse pointer changes to hand shape */
+.single-video {
+    width: 300px;
+    height: 240px;
+    cursor: pointer;
+
+}
+
+/* Reduce video opacity on mouse hover */
+.single-video:hover {
+    opacity: 0.7;
+}
+
+/* Remove the dashed box around the video on hover */
+.single-video:focus {
+    outline: none;
+
+}
+
+/* Prevent videos from playing automatically when loaded */
+.single-video:not(:paused) {
+    animation: none;
+}
+
+/* in order to display text, set a blackboard with 50% transparent,120% website height and  100% website width */
+.blacksheet {
+    position: fixed;
+    height: 120vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+
+/* set a picture at the bottom of the screen */
+.background-picture {
+
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: -2;
+    object-fit: cover;
+
+}
+
+
+
+/* set feedback and aboutme pages style,the font lengths are at most occupy 60% width  */
+
+.feedback {
+    text-align: center;
+    margin: auto;
+    color: #ffffff;
+    width: 60vw;
+}
+
+
+
+/* set sourcelog page style */
+.sourceLog {
+    text-align: center;
+    margin: auto;
+    color: #fff;
+
+}
+
+.sourceLog table {
+    margin-top: 50px;
+    border: 2px solid blue;
+    /* border-collapse: collapse; */
+    width: 80%;
+
+}
+
+.sourceLog td,
+th {
+    text-align: left;
+    padding: 10px;
+
+}
+
+.sourceLog th {
+    background-color: blue;
+
+}
+
+.sourceLog a {
+    color: #ffffff;
+}
+
+/* h. (optional) the table will highlight the table row when we move the mouse over it */
+.sourceLog tr:hover {
+    background-color: lightblue;
+}
+
+/* i. (optional) the table will display a horizontal scroll bar if the window screen is too narrow to display the whole table */
+.sourceLog table {
+    overflow-x: auto;
+    margin: auto;
+}
+
+
+.sourceLog caption {
+    font-style: italic;
+    color: rgb(255, 255, 255);
+    font-size: 13px;
+}
+
+/* set sitemap page style */
+.site-map a {
+    font-size: 24px;
+    color: #fff;
+}
+
+.site-map {
+    text-align: center;
+}
+
+.site-map li {
+    margin-top: 10px;
+}
+
+/* Set the external display of the hover window */
+.flow-Window-shadow {
+    display: none;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 10;
+    /* Set transparency for mozilla firefox  */
+    -moz-opacity: 0.6;
+    /* Set transparency */
+    opacity: .60;
+    /* Setting transparency for IE  */
+    filter: alpha(opacity=66);
+}
+
+
+/* Set the hover window, 60% wide, 85% long, centered, not displayed by default. */
+.flow-window {
+    display: none;
+    position: fixed;
+    top: 5%;
+    left: 25%;
+    width: 60%;
+    height: 85%;
+    border: 3px solid honeydew;
+    background-color: aliceblue;
+    z-index: 11;
+
+    text-align: center;
+    margin: auto;
+
+}
+
+/* Make sure x is at the right */
+.flow-window a {
+    float: right;
+}
+
+/* Control video window size */
+.flow-window video {
+    margin-top: 20px;
+    width: 80%;
+    height: auto;
+}
+
+/* Control text window size */
+.flow-text {
+    margin-top: 10px;
+    width: 80%;
+    height: auto;
+
+}
+
+
+/* Make facebook feeds display center */
+.SocialNetworkingFeed{
+    text-align: center;
+
+}
+
+
+/* The location of the assigned rating is located in the upper left corner of the website */
+
+.stars{
+    position: absolute;
+    
+}
+
+.star {
+    font-size: 25px;
+    color: gray;
+    cursor: pointer;
+  }
+  
+  .star.active {
+    color: gold;
+  }
+
+  .star:hover {
+    color: gold;
+  }

@@ -1,0 +1,39 @@
+h1,
+h2,
+h3,
+p {
+  color: #ffffff;
+
+}
+
+
+.recipes {
+  text-align: center;
+}
+
+.media-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Set the sub-category display effect, 
+each such as the width of 30% of the screen width, 
+each sub-category interval of 10px, 
+set the background color and border color, 
+set the content from the border 5px display. */
+.media-item {
+  width: 30vw;
+  margin: 10px;
+  background-color: #444442;
+  border-radius: 10px;
+  border: 2px solid rgb(98, 220, 28);
+  padding: 5px;
+}
+
+/* Specify the size of subcategory video and photo display, 
+to prevent the photo from overflowing the container. */
+.media-item img,
+.media-item video {
+  max-width: 100%;
+  height: auto;
+}
