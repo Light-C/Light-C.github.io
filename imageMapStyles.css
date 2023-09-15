@@ -1,0 +1,23 @@
+/* Centering the image */
+.image-map {
+    margin: auto;
+    text-align: center;
+    position: relative;
+    z-index: 5;
+
+}
+
+
+h1,
+p {
+    margin: auto;
+    width: 85vw;
+    text-align: center;
+    color: #ffffff;
+
+}
+
+canvas{
+    position: absolute;
+    display: none;
+}

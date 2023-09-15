@@ -1,0 +1,92 @@
+/* The second line to the 47th line, is to get the navigation bar and css settings that assignment1 has done */
+/* Set navigation bar position */
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: black;
+  opacity: 0.5;
+
+}
+/* Set the color of the navigation bar label */
+.nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  text-align: center;
+
+}
+/* Set each list to distribute the container width equally */
+.nav li {
+  flex: 1;
+
+}
+/* Set the style of the navigation bar a */
+.nav li a {
+  display: block;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+/* Mouse hover to change color */
+.nav li a:hover {
+  color: #e21898;
+}
+/* set a picture at the bottom of the screen */
+.background-picture {
+
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: -1;
+  object-fit: cover;
+}
+
+
+/* Change the color of the displayed text to white, and center them */
+h1,
+h2,
+h3,
+p {
+  color: #ffffff;
+  text-align: center;
+
+}
+
+/* Use a grid layout with two columns per row and the same width for each column. The spacing between the columns is 10px. 
+2% of the entire screen width from the left border. The entire width of the container is 95% of the screen width. 
+Horizontal centered display, text centered display */
+.box {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  grid-gap: 10px; 
+  padding-left: 2vw;
+  width: 95vw;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* To prevent the spacing between left and right, set the content to 10px from the container border. */
+.inner-box {
+  padding: 10px;
+
+}
+
+
+/* Set change css button centered display */
+button {
+  display: block;
+  margin: 0 auto
+}
+
+/* Change the entire body font style */
+body {
+  font-family: 'Courgette', cursive;
+}
+
+

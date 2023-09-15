@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <title>Share Recipes</title>
+    <!-- link to the css file -->
+    <link rel="stylesheet" type="text/css" href="shareRecipesStyle.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="blacksheet"></div>
+
+    <!-- because I have a background picture, there are not easy to read words,so I set a transparent blackboard so that it is easy to read words -->
+
+
+    <!-- this is the navigation bar, there are 8 part of my website,I use css to fix it on the top of the website -->
+    <nav class="nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="siteMap.html">Site Map</a></li>
+            <li><a href="photoGallery.html">Photo Gallery</a></li>
+            <li><a href="shareRecipes.html">Share Recipes</a></li>
+            <li><a href="imageMap.html">Image Map</a></li>
+            <li><a href="aboutMe.html">About Me</a></li>
+            <li><a href="feedback.html">Feedback Form</a></li>
+            <li><a href="sourceLog.html">Source Log</a></li>
+            <li><a href="assignment.html">Assignment Page</a></li>
+        </ul>
+    </nav>
+
+
+
+
+
+    <!-- set the background picture -->
+    <img src="pictures/backgroundpicture.jpg" alt="background picture" class="background-picture">
+    <!-- set a container called feedback which allow me using CSS control the style inclued show on the ccenter of the screen
+            About me have 3 parts, first part is my picture,second part is my passion third part is Misstion State 
+            which including website purpose, website Target and website development-->
+
+
+
+
+    <div class="recipes">
+        <h1>Share Your Recipes</h1>
+        <p>You can upload your favorite dish here. You must enter the name of the author, the name of the dish, the
+            description of the dish and a photo. </p>
+        <p>If you have a video of the cooking, you can upload it, which will help
+            others to understand the dish better.</p>
+
+        <form id="uploadForm">
+            <label for="author" style="color: white;">Author:</label>
+            <input type="text" id="author" required><br>
+
+            <label for="author" style="color: white;">Dish Name:</label>
+            <input type="text" id="dish" required><br>
+
+            <label for="photo" style="color: white;">Dish Photo:</label>
+            <input type="file" id="photo" accept="image/*" required><br>
+
+            <label for="video" style="color: white;">Dish Video:</label>
+            <input type="file" id="video" accept="video/*"><br>
+
+            <label style="color: white;" for="description">Please fill your description:</label><br>
+            <textarea id="description"
+                placeholder="Fall free to share the feeling of cooking, the process, the ingredients, etc..." cols="30"
+                rows="10" required></textarea><br>
+
+
+            <button type="submit">Upload</button>
+        </form>
+
+        <h2>Shared recipes</h2>
+
+        <div class="media-container" id="mediaContainer"></div>
+
+
+
+    </div>
+
+
+
+
+
+    <script src="shareRecipesScript.js"></script>
+
+</body>
+
+</html>

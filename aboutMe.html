@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <title>About Me</title>
+    <!-- link to the css file -->
+    <link id="cssLink" rel="stylesheet" type="text/css" href="styles.css">
+
+    <!-- Loading Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- because I have a background picture, there are not easy to read words,so I set a transparent blackboard so that it is easy to read words -->
+    <div class="blacksheet"></div>
+
+    <!-- this is the navigation bar, there are 8 part of my website,I use css to fix it on the top of the website -->
+    <nav class="nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="siteMap.html">Site Map</a></li>
+            <li><a href="photoGallery.html">Photo Gallery</a></li>
+            <li><a href="shareRecipes.html">Share Recipes</a></li>
+            <li><a href="imageMap.html">Image Map</a></li>
+            <li><a href="aboutMe.html">About Me</a></li>
+            <li><a href="feedback.html">Feedback Form</a></li>
+            <li><a href="sourceLog.html">Source Log</a></li>
+            <li><a href="assignment.html">Assignment Page</a></li>
+        </ul>
+    </nav>
+
+
+
+
+    <!-- set the background picture -->
+    <img id="backgroundPicture" src="pictures/backgroundpicture.jpg" alt="background picture"
+        class="background-picture">
+
+
+    <!-- set a container called feedback which allow me using CSS control the style inclued show on the center of the screen.
+    Assignment3 update, class="feedback" will be disabled when user click the change css button. Instead, 
+    the containers class="inner-box" and class="box" will take effect. The content in the box will be laid out in a grid. 
+    And inner-box is the element of the box.-->
+
+    <div class="feedback">
+
+        <button id ="changeCSS" onclick="changeCSS()">Change CSS</button>
+
+
+        <h2 id=about_me>About Me</h2>
+        <div class="box">
+
+            <div class="inner-box">
+
+                <!-- Linking images using relative paths,set the picture width -->
+                <img src="pictures/me.png" alt="picture" width="400">
+            </div>
+
+            <div class="inner-box">
+
+                <h3>Self Description </h3>
+                <p>Hi, my name is Jialiang and I'm a student.
+                    I'm very outgoing, I like sports, and I like food even more.
+                    I hope I can keep up with my studies, and I hope I can learn something useful and have a good
+                    job
+                    in the future.
+                    I hope to use this website to introduce myself.
+                </p>
+
+
+                <h3 id="my_passion">
+                    My passion
+                </h3>
+
+                <p>
+                    I enjoy runing in my free time and am passionate about shopping. I like to cook a lot of delicious
+                    food,
+                    although I often fail, but I think cooking is a happy thing and I am not afraid of failure.
+
+                </p>
+
+            </div>
+
+        </div>
+        <br><br><br><br>
+
+
+        <h2>
+            Mission Statement
+        </h2>
+
+        <div class="box">
+
+            <div class="inner-box">
+
+                <h3>Website Purpose</h3>
+                <p>
+                    Many people give up cooking on their own because their cooking is not good or it is difficult to
+                    cook. I want to make a website that teaches cooking, mainly about simple dishes, each dish takes
+                    less
+                    than half an hour to make, so that people who visit the website can cook delicious food easily
+                    and
+                    quickly.</p>
+
+                <h3>Website Target</h3>
+                <p>
+                    website target:My target group is people who don't have much free time in their daily life, but
+                    want to
+                    cook for themselves. Most of the selected recipes can be completed within 1 hour.
+                </p>
+
+            </div>
+
+
+            <div class="inner-box">
+                <h3>Website Development</h3>
+                <p>
+                    The search function is still missing from the website, which is due to the high technical
+                    difficulty, in addition to the fact that there is not much content on the website and setting up the
+                    search function is not very useful.</p>
+                <p>In the first assignment, I completed the prototype of the website and created the basic web
+                    architecture. Architecture.</p>
+                <p>In the second assignment, I added two pages, image gallery and image map, and created a detailed
+                    description of the recipes. In index.html, when you click on the video you are interested in, you
+                    You will see an enlarged version of the video and how to make it. Likewise, you can see how to make
+                    the recipe in the image gallery. I've added the category feature to index.html.</p>
+                <p>In the third assignment, I fixed some bugs, such as blacksheet before specifying the length, now it
+                    is overwritten directly on top of the image. I added three functions, share recipe function, share
+                    to community media and browse Social Networking Feeds. For the share recipe function users can
+                    upload dish name, dish picture video etc. and then you can see the shared content at the bottom of
+                    the page. In addition to this, I have added alternative css functionality to the About Me page.
+                    Added the introduction of About My Site.
+                </p>
+
+            </div>
+
+        </div>
+
+        <br><br><br><br>
+
+
+
+        <h2 id = "AboutMySite">About My Site</h2>
+        <div class="box">
+
+
+            <div class="inner-box">
+                <img src="pictures/AboutMySiteIntroduction.png" alt="picture" width="500">
+            </div>
+
+
+            <div class="inner-box">
+                <h3>Introduction</h3>
+                <p>I am delighted to have had the opportunity to study this course this semester. Through both
+                    theoretical learning and practical application, I have gained valuable knowledge in HTML/CSS,
+                    JavaScript, andtheart of designing a successful website, which involves various factors. Before
+                    taking this course, I used to believe that combining attractive photos, paragraphs, and videos would
+                    create a
+                    good website. However, after completing this course, I realized that my previous understanding was
+                    flawed. A well-designed website requires more than just good content; it needs a user-friendly
+                    interface,
+                    smooth interactivity, sensible layout, appealing visual design, and accessibility. Additionally,
+                    website security and maintenance are crucial aspects to consider. Now, let me share my insights on
+                    website design.</p>
+            </div>
+
+
+            <div class="inner-box">
+                <img src="pictures/AboutMySiteWebsiteDesignProcess.png" alt="picture" width="500">
+            </div>
+
+
+            <div class="inner-box">
+                <h3>Website Design Process</h3>
+                <p>Front-end development can be divided into two parts: design and implementation, both of which go
+                    hand in hand. To design an exceptional front-end, we need to start with creating an appealing visual
+                    style. Firstly, we define the goals and purpose of the website. For instance, my website aims to
+                    help people prepare delicious meals quickly by providing simple recipes. Next, we gather the necessary
+                    materials, such as recipe tutorials and videos. Then, we create the website's architecture, which is
+                    a vital step that involves considering multiple factors. We can use various layout techniques, such as
+                    float, grid, or flexbox, to assist in constructing the website. We place the desired content in suitable
+                    locations, such as keeping the navigation bar at the top of the webpage and featuring captivating
+                    recipes in prominent positions. Different areas of a webpage attract varying levels of user attention, so
+                    we need to consider what elements will engage users and encourage them to spend time exploring our
+                    site. During this process, we also consider style design by utilizing CSS to define fonts, colors,
+                    positions, and more. Moreover, we must accommodate the diverse needs of users, including hearing, vision,
+                    cognitive processing, and manual dexterity, ensuring our website caters to a broad audience. After
+                    constructing the website's structure, we optimize it for different devices through responsive design
+                    to ensure a seamless browsing experience. Finally, we test and optimize the website to ensure that all
+                    content displays correctly before publishing and maintaining it.
+                </p>
+            </div>
+
+
+            <div class="inner-box">
+
+                <img src="pictures/AboutMySiteInsightsIntoImplementation.jpg" alt="picture" width="500">
+            </div>
+
+
+            <div class="inner-box">
+                <h3>Insights Into Implementation</h3>
+                <p>Moving on, I would like to discuss my insights during the implementation phase. One aspect that
+                    left a lasting impression on me is the security of JavaScript. When attempting to access local files
+                    using JavaScript, I discovered that it is not feasible. Further research revealed that JavaScript
+                    primarily serves as a client-side scripting language, handling user interactions, manipulating webpage
+                    elements, and performing asynchronous operations within the user's web browser. This introduces security
+                    risks because malicious actors can manipulate or exploit JavaScript code to execute unauthorized
+                    actions on a user's device. Therefore, JavaScript imposes strict limitations on directly accessing sensitive
+                    files and performing certain actions. Additionally, I believe understanding the usage of containers in
+                    HTML is essential. For instance, we can use "header" for the header section, "footer" for the footer
+                    section, "nav" for navigation, "div" for creating block-level elements, and so on. In layouts, we often
+                    utilize nested containers to wrap other HTML elements for better organization and structure.
+                </p>
+            </div>
+
+
+            <div class="inner-box">
+                <img src="pictures/AboutMySiteInsightsOtherImpressiveContentsOfLectures.jpg" alt="picture" width="500">
+
+            </div>
+
+
+            <div class="inner-box">
+                <h3>Other Impressive Contents Of Lectures</h3>
+                <p>Lastly, besides learning about website design, this course also introduced me to the concepts of
+                    web
+                    security and literature review. I gained knowledge about common web threats such as spoofing,
+                    DoS
+                    attacks, tampering, and countermeasures against them. When designing websites, we need to be
+                    security-conscious and implement necessary measures to protect sensitive data. After building
+                    the
+                    website, we employ various testing methods to identify vulnerabilities and ensure network
+                    security.
+                    Furthermore, the lecture on literature review techniques was invaluable. We learned about the
+                    IMRD
+                    structure (Introduction, Methods, Results, Discussion) and adopted the 4S system (Skim, Scan,
+                    Select,
+                    Summarize) for effective reading. Taking notes during the reading process enhanced our memory
+                    retention
+                    and comprehension.</p>
+
+            </div>
+
+
+
+            <div class="inner-box">
+                <img src="pictures/AboutMySiteConclusion.png" alt="picture" width="500">
+            </div>
+
+            <div class="inner-box">
+                <h3>Conclusion</h3>
+                <p>To conclude, this course has provided me with a wealth of knowledge in website design. However,
+                    it is important to note that creating a perfect front-end website requires continuous learning beyond
+                    what we acquire in the classroom. The teacher can only guide us on learning approaches and methods, but
+                    it is up to us to pursue further knowledge and absorb it effectively.</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>
+// The entire JavaScript is used to control the buttons. 
+// When the user clicks the button, if the current css is styles.css, 
+// it will be replaced with aboutMeStyles.css and the dynamic background image will be replaced. 
+// Otherwise the current css file will be changed to styles.css and the static background image will be replaced.
+        function changeCSS() {
+            var cssLink = document.getElementById("cssLink");
+            var backgound = document.getElementById("backgroundPicture");
+
+            if (cssLink.href.endsWith("styles.css")) {
+                cssLink.href = "aboutMeStyles.css";
+                backgound.src = "pictures/backgroundpicture.gif";
+            } else {
+                cssLink.href = "styles.css";
+                backgound.src = "pictures/backgroundpicture.jpg";
+            }
+        }
+
+    </script>
+
+</body>
+
+
+</html>

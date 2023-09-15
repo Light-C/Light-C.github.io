@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <title>Image Map</title>
+    <!-- link to the css file -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="imageMapStyles.css">
+
+
+</head>
+
+<body>
+    <!-- because I have a background picture, there are not easy to read words,so I set a transparent blackboard so that it is easy to read words -->
+    <div class="blacksheet"></div>
+
+    <!-- this is the navigation bar, there are 8 part of my website,I use css to fix it on the top of the website -->
+    <nav class="nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="siteMap.html">Site Map</a></li>
+            <li><a href="photoGallery.html">Photo Gallery</a></li>
+            <li><a href="shareRecipes.html">Share Recipes</a></li>
+            <li><a href="imageMap.html">Image Map</a></li>
+            <li><a href="aboutMe.html">About Me</a></li>
+            <li><a href="feedback.html">Feedback Form</a></li>
+            <li><a href="sourceLog.html">Source Log</a></li>
+            <li><a href="assignment.html">Assignment Page</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- set the background picture -->
+    <img src="pictures/backgroundpicture.jpg" alt="background picture" class="background-picture">
+
+    <h1>Sample Image Map</h1>
+    <p>In our daily life, we will use many different kitchen utensils, the appearance of these kitchen utensils may
+        not be very different, but their usage and origin may be very different. Some kitchen utensils we even do
+        not know the name. Let's learn more about these kitchen utensils below! You can hover your mouse over a
+        kitchen utensil and you will see it name, and if you click on it, you will be redirected to Wikipedia
+        to learn more about it. (Some kitchen utensils not found on Wikipedia will be replaced by other websites)
+    </p>
+    <!-- With the introduction of the course, I display the content of the image by specifying the area of the image.
+             For regular graphics I use rectangles and for irregular graphics I use polygons to mark the area.
+              <alt> is the tag that is displayed when it fails to load, 
+                <title> is the content that is displayed on mouse hover -->
+
+    <div class="image-map">
+
+        <img src="pictures/imagemap.jpg" usemap="#image_map" alt="image-map">
+        <map name="image_map">
+            <area alt="Plate" title="Plate" target="_blank" href="https://en.wikipedia.org/wiki/Plate_(dishware)"
+                coords="1000,565,1247,676" shape="rect">
+            <area alt="Cup" title="Cup" href="https://en.wikipedia.org/wiki/Cup" coords="809,594,971,697" shape="rect">
+            <area alt="Rolling Pin" title="Rolling Pin" target="_blank" href="https://en.wikipedia.org/wiki/Rolling_pin"
+                coords="331,614,756,682" shape="rect">
+            <area alt="Skimmer" title="Skimmer" target="_blank" href="https://en.wikipedia.org/wiki/Skimmer_(utensil)"
+                coords="987,330,1062,525" shape="rect">
+            <area alt="Serving Spoon" title="Serving Spoon" target="_blank" href="https://en.wikipedia.org/wiki/Spoon"
+                coords="1076,336,1138,531" shape="rect">
+            <area alt="Turner" title="Turner" target="_blank" href="https://en.wikipedia.org/wiki/Spatula"
+                coords="1159,340,1222,530" shape="rect">
+            <area alt="Slotted Turner" title="Slotted Turner" target="_blank"
+                href="https://www.masterclass.com/articles/spatula-vs-turner-explained" coords="623,528,878,590"
+                shape="rect">
+            <area alt="Bowl" title="Bowl" target="_blank" href="https://en.wikipedia.org/wiki/Bowl"
+                coords="760,422,942,522" shape="rect">
+            <area alt="Teapot" title="Teapot" target="_blank" href="https://en.wikipedia.org/wiki/Teapot"
+                coords="743,244,968,406" shape="rect">
+            <area alt="Chinese Spoon" title="Chinese Spoon" target="_blank"
+                href="https://en.wikipedia.org/wiki/Chinese_spoon"
+                coords="807,171,816,227,908,197,950,143,943,124,876,169" shape="poly">
+            <area alt="Soup Bowl" title="Soup Bowl" target="_blank" href="https://en.wikipedia.org/wiki/Bowl"
+                coords="682,41,848,31,927,100,837,165,759,164,684,92" shape=poly>
+            <area alt="Sauce Pan" title="Sauce Pan" target="_blank"
+                href="https://en.wikipedia.org/wiki/Cookware_and_bakeware#Types_of_cookware_and_bakeware"
+                coords="308,502,313,560,359,601,491,593,525,545,615,521,694,511,690,479,508,515,413,469" shape="poly">
+            <area alt="Fork" title="Fork" target="_blank" href="https://en.wikipedia.org/wiki/Fork"
+                coords="663,264,710,452" shape="rect">
+            <area alt="Spoon" title="Spoon" target="_blank" href="https://en.wikipedia.org/wiki/Spoon"
+                coords="590,266,653,454" shape="rect">
+            <area alt="Kettle" title="Kettle" target="_blank" href="https://en.wikipedia.org/wiki/Kettle"
+                coords="433,33,679,253" shape="rect">
+            <area alt="Dutch Oven" title="Dutch Oven" target="_blank" href="https://en.wikipedia.org/wiki/Dutch_oven"
+                coords="247,257,544,435" shape="rect">
+            <area alt="Ladle" title="Ladle" target="_blank" href="https://en.wikipedia.org/wiki/Ladle_(spoon)"
+                coords="55,251,142,455" shape="rect">
+            <area alt="Tablespoon" title="Tablespoon" target="_blank" href="https://en.wikipedia.org/wiki/Tablespoon"
+                coords="168,247,232,471" shape="rect">
+            <area alt="Chef's Knife" title="Chef's Knife" target="_blank"
+                href="https://en.wikipedia.org/wiki/Chef%27s_knife" coords="52,172,361,230" shape="rect">
+            <area alt="Cleaver" title="Cleaver" target="_blank" href="https://en.wikipedia.org/wiki/Cleaver"
+                coords="59,90,354,160" shape="rect">
+            <area alt="Utility Knife" title="Utility Knife" target="_blank"
+                href="https://en.wikipedia.org/wiki/Utility_knife" coords="65,22,349,81" shape="rect">
+            <area alt="Teaspoon" title="Teaspoon" target="_blank" href="https://en.wikipedia.org/wiki/Teaspoon"
+                coords="138,621,174,606,277,593,258,568,155,585,96,592,102,609" shape="poly">
+            <area alt="Coffee Cup" title="Coffee Cup" target="_blank" href="https://en.wikipedia.org/wiki/Coffee_cup"
+                coords="49,479,225,571" shape="rect">
+            <area alt="Cutting Board" title="Cutting Board" target="_blank"
+                href="https://en.wikipedia.org/wiki/Cutting_board" coords="994,52,1212,319" shape="rect">
+        </map>
+    </div>
+
+
+
+
+
+
+</body>
+
+</html>

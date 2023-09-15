@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <title>Easy Cooking</title>
+    <!-- link to the css file -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <!-- link online font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alkatra&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- this is the navigation bar, there are 8 part of my website,I use css to fix it on the top of the website -->
+    <nav class="nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="siteMap.html">Site Map</a></li>
+            <li><a href="photoGallery.html">Photo Gallery</a></li>
+            <li><a href="shareRecipes.html">Share Recipes</a></li>
+            <li><a href="imageMap.html">Image Map</a></li>
+            <li><a href="aboutMe.html">About Me</a></li>
+            <li><a href="feedback.html">Feedback Form</a></li>
+            <li><a href="sourceLog.html">Source Log</a></li>
+            <li><a href="assignment.html">Assignment Page</a></li>
+        </ul>
+    </nav>
+
+
+
+
+
+
+
+    <!-- show the background video, use CSS to fix it at the bottom of the website and auto play when open the website -->
+    <video autoplay muted loop class="background-video">
+        <source src="video/recommend/backgound.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- show the search overlap the video -->
+    <form class="search">
+        <h1>Easy Cooking Website</h1>
+        <input type="text" placeholder="search menu...">
+        <button type="submit">search</button>
+
+        <h3>Share this website on social Networking platforms:</h3>
+
+        <!-- Add a plugin to share this website to facebook -->
+        <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous"
+            src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v16.0" nonce="l6BVbHfc"></script>
+        <div class="fb-share-button" data-href="https://stuweb.cecs.anu.edu.au/~u7349311/" data-layout="button_count"
+            data-size="large"><a target="_blank"
+                href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fstuweb.cecs.anu.edu.au%2F%7Eu7349311%2F&amp;src=sdkpreparse"
+                class="fb-xfbml-parse-ignore">Share</a></div>
+
+        <!-- Add a plugin to share this site to LinkedIn -->
+        <script src="https://platform.linkedin.com/in.js"></script>
+        <script type="IN/Share" data-url="https://stuweb.cecs.anu.edu.au/~u7349311/"></script>
+
+    </form>
+
+
+    <!-- Rate the site -->
+    <div class="stars">
+        <h3>Please rate this site!</h3>
+        <p id="star-text">(From left to right, 5 stars is the best, 1 star is the worst.)</p>
+        <div id="rating">
+            <span class="star" onclick="rate(1)">&#9733;</span>
+            <span class="star" onclick="rate(2)">&#9733;</span>
+            <span class="star" onclick="rate(3)">&#9733;</span>
+            <span class="star" onclick="rate(4)">&#9733;</span>
+            <span class="star" onclick="rate(5)">&#9733;</span>
+        </div>
+
+
+    </div>
+
+
+
+    <!-- Because the video and search bar above are FIX and are not in the text stream. 
+    So I need to leave a blank area for the video to ensure that the following content does not overlap on the video. -->
+    <div class="blank"></div>
+
+
+    <!-- I put all the recommended videos into a container called recomend and then use css to set the layout order of the elements inside this container. 
+    Displaying different videos by selecting categories.
+    For each recommended video, I put them in a container called video-container, 
+    which contains the video, the name of the dish, the author. 
+    This container is mainly used for the layout of the video and the font. Each video is put into a container called single-video. 
+    This container is mainly responsible for the size and style of the video. 
+    The text of the video description is placed in a container called video-description,
+    which is used to control the form of the font. 
+    JavaScript was used which allow video auto playing when mouse stay over the video and recognition of selected categories -->
+    <div class="recommend">
+
+        <h2 class="recommend-text">Recommend for you</h2>
+        <label for="category">Select a category:</label>
+        <select id="category">
+            <option value="all">All categories</option>
+            <option value="deil">Deil</option>
+            <option value="dessert">Dessert</option>
+        </select>
+
+        <div class="video-container">
+
+            <div class="video-text" onclick="flowWindow(event, this)" data-category="deil">
+                <video src="video/recommend/recommend1.webm" class="single-video" onmouseover="playVideo(this)"
+                    onmouseout="pauseVideo(this)" muted></video>
+                <div class="video-description">
+                    <p>Pazza</p>
+                    <p>Tasty</p>
+                </div>
+            </div>
+
+            <div class="video-text" onclick="flowWindow(event, this)" data-category="dessert">
+                <video src="video/recommend/recommend2.webm" class="single-video" onmouseover="playVideo(this)"
+                    onmouseout="pauseVideo(this) " muted></video>
+                <div class="video-description">
+                    <p>Fudgy Brownie</p>
+                    <p>Spice Bangla</p>
+                </div>
+            </div>
+
+            <div class="video-text" onclick="flowWindow(event, this)" data-category="deil">
+                <video src="video/recommend/recommend3.webm" class="single-video" onmouseover="playVideo(this)"
+                    onmouseout="pauseVideo(this)" muted></video>
+                <div class="video-description">
+                    <p>Smokey Chicken Cutlets</p>
+                    <p>Yes I Can Cook</p>
+                </div>
+            </div>
+
+            <div class="video-text" onclick="flowWindow(event, this)" data-category="deil">
+                <video src="video/recommend/recommend4.webm" class="single-video" onmouseover="playVideo(this)"
+                    onmouseout="pauseVideo(this)" muted></video>
+                <div class="video-description">
+                    <p>Perfect Risotto</p>
+                    <p>Tasty</p>
+                </div>
+            </div>
+
+            <div class="video-text" onclick="flowWindow(event, this)" data-category="dessert">
+                <video src="video/recommend/recommend5.webm" class="single-video" onmouseover="playVideo(this)"
+                    onmouseout="pauseVideo(this)" muted></video>
+                <div class="video-description">
+                    <p>3 Easy Egg Mayo Sandwich</p>
+                    <p>Banglar Rannaghor</p>
+                </div>
+            </div>
+
+            <div class="video-text" onclick="flowWindow(event, this)" data-category="deil">
+                <video src="video/recommend/recommend6.webm" class="single-video" onmouseover="playVideo(this)"
+                    onmouseout="pauseVideo(this)" muted></video>
+                <div class="video-description">
+                    <p>Buffalo Wings</p>
+                    <p>The Cooking Foodie</p>
+                </div>
+            </div>
+
+            <div class="video-text" onclick="flowWindow(event, this)" data-category="dessert">
+                <video src="video/recommend/recommend7.webm" class="single-video" onmouseover="playVideo(this)"
+                    onmouseout="pauseVideo(this)" muted></video>
+                <div class="video-description">
+                    <p>Protein Cheesecake</p>
+                    <p>The Cooking Foodie</p>
+                </div>
+            </div>
+
+            <div class="video-text" onclick="flowWindow(event, this)" data-category="dessert">
+                <video src="video/recommend/recommend8.webm" class="single-video" onmouseover="playVideo(this)"
+                    onmouseout="pauseVideo(this)" muted></video>
+                <div class="video-description">
+                    <p>Chicken Pasta Bake Recipe</p>
+                    <p>The Cooking Foodie</p>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <!--Hover Window-->
+    <div id="window" class="flow-window">
+        <a href="javascript:void(0)" onclick="hideFlowWindow()">X</a>
+        <!-- Hovering video -->
+        <div id="flowVideo" class="flow-window-video">
+            <video src="video/recommend/recommend7.webm" controls>
+                Your browser does not support the video tag.
+            </video>
+            <!-- Hover text -->
+            <embed class="flow-text" id="flowTxt" src="menuMethod/recommend8.txt">
+        </div>
+    </div>
+
+
+    <!--After the hover window appears, the background becomes dark-->
+    <div id="shadow" class="flow-Window-shadow"></div>
+
+
+
+    <!-- Add plugin for facebook feeds -->
+    <div id="SocialNetworkingFeed" class="SocialNetworkingFeed">
+        <h2>Social Networking Feeds</h2>
+
+        <iframe
+            src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Feasyrecipespro&tabs=timeline&width=500&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+            width="500" height="500" style="border:none; overflow:hidden"
+            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+
+        <iframe
+            src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffamilyrecipespro%2F%3Fshow_switched_toast%3D0%26show_invite_to_follow%3D0%26show_switched_tooltip%3D0%26show_podcast_settings%3D0%26show_community_review_changes%3D0%26show_community_rollback%3D0%26show_follower_visibility_disclosure%3D0&tabs=timeline&width=500&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+            width="500" height="500" style="border:none; overflow:hidden"
+            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+
+    </div>
+
+
+    <!-- link to the JavaScript file -->
+    <script src="indexScript.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <title>Feedback</title>
+    <!-- link to the css file -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <!-- because I have a background picture, there are not easy to read words,so I set a transparent blackboard so that it is easy to read words -->
+    <div class="blacksheet"></div>
+
+    <!-- this is the navigation bar, there are 8 part of my website,I use css to fix it on the top of the website -->
+    <nav class="nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="siteMap.html">Site Map</a></li>
+            <li><a href="photoGallery.html">Photo Gallery</a></li>
+            <li><a href="shareRecipes.html">Share Recipes</a></li>
+            <li><a href="imageMap.html">Image Map</a></li>
+            <li><a href="aboutMe.html">About Me</a></li>
+            <li><a href="feedback.html">Feedback Form</a></li>
+            <li><a href="sourceLog.html">Source Log</a></li>
+            <li><a href="assignment.html">Assignment Page</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- set the background picture -->
+    <img src="pictures/backgroundpicture.jpg" alt="background picture" class="background-picture">
+
+    <!-- set a psot form  and put the form in a container called feedback which make the form on the center of the screen and set font white
+            this is a Feedback form every vister can fill their beedback on the form-->
+    <div class="feedback">
+        <h1>Feedback Form</h1>
+        <form method="post">
+            <label for="name">Your name</label><br>
+            <input type="text" id="name" name="name"><br>
+
+            <label for="email">Your email address</label><br>
+            <input type="email" id="email" name="email"><br>
+
+            <label>What is your gender?</label><br>
+
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+
+
+            <input type="radio" name="gender" id="female" value="female">
+            <label for="female">Female</label>
+
+
+            <input type="radio" name="gender" id="other" value="Other">
+            <label for="other">Other</label>
+
+
+            <input type="radio" name="gender" id="not_say" value="not_say">
+            <label for="not_say">I prefer not to say</label>
+            <br>
+
+            <label>How old are you?</label>
+            <select name="age" id="age">
+                <option value="age1">0-18</option>
+                <option value="age2">19-35</option>
+                <option value="age1">35-50</option>
+                <option value="age1">Above 50</option>
+            </select>
+            <br>
+
+
+            <label for="feedback">Please fiill your feedback:</label>
+            <br>
+            <textarea name="feedback" id="feedback" cols="30" rows="10"></textarea>
+            <br>
+            <label>Submit:</label>
+            <input type="submit" value="Send it">
+            <label>or</label>
+            <button type="reset">Clear</button>
+        </form>
+
+
+    </div>
+
+</body>
+
+</html>

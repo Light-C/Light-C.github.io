@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <title>photo Gallery</title>
+    <!-- link to the css file -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="photoGalleryStyles.css">
+
+
+</head>
+
+<body>
+    <!-- because I have a background picture, there are not easy to read words,so I set a transparent blackboard so that it is easy to read words -->
+    <div class="blacksheet"></div>
+
+    <!-- this is the navigation bar, there are 8 part of my website,I use css to fix it on the top of the website -->
+    <nav class="nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="siteMap.html">Site Map</a></li>
+            <li><a href="photoGallery.html">Photo Gallery</a></li>
+            <li><a href="shareRecipes.html">Share Recipes</a></li>
+            <li><a href="imageMap.html">Image Map</a></li>
+            <li><a href="aboutMe.html">About Me</a></li>
+            <li><a href="feedback.html">Feedback Form</a></li>
+            <li><a href="sourceLog.html">Source Log</a></li>
+            <li><a href="assignment.html">Assignment Page</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- set the background picture -->
+    <img src="pictures/backgroundpicture.jpg" alt="background picture" class="background-picture">
+
+    <h1>Sample Photo Gallery</h1>
+    <p>Click on the previous dish or the next dish to see the different dishes. </p>
+    <p>If you like the dish, you can click
+        How to cook to see how to make the dish, or you can click Like multiple times to show your love for the
+        dish!</p>
+
+    <!-- My photo gallery is toggled by clicking on the previous dish and the next dish.
+             Clicking on how to cook? will bring up a hover window to see how to
+              make the dish by controlling the css style and using JavaScript. 
+              The number of likes can be increased by clicking on like! 
+              with controlling it with JavaScript. Wrap all elements in class:pictures
+               to call JavaScript to toggle the displayed recipe -->
+    <div class="gallery-container">
+        <div class="pictures">
+            <div class="numbertext">1 / 10</div>
+            <img alt="photo" src="pictures/gallery_wide_1.png">
+            <div class="title">Golden Shrimp --- Golden Jade</div>
+        </div>
+
+        <div class="pictures">
+            <div class="numbertext">2 / 10</div>
+            <img alt="photo" src="pictures/gallery_wide_2.png">
+            <div class="title">Five Grains of Plenty - Full of Harvest</div>
+        </div>
+
+        <div class="pictures">
+            <div class="numbertext">3 / 10</div>
+            <img alt="photo" src="pictures/gallery_wide_3.png">
+            <div class="title">Cold shredded onion --- smart and clever</div>
+        </div>
+
+        <div class="pictures">
+            <div class="numbertext">4 / 10</div>
+            <img alt="photo" src="pictures/gallery_wide_4.png">
+            <div class="title">Lettuce with oil - Produce wealth in all seasons</div>
+        </div>
+
+        <div class="pictures">
+            <div class="numbertext">5 / 10</div>
+            <img alt="photo" src="pictures/gallery_wide_5.png">
+            <div class="title">Sweet and Sour Fish</div>
+        </div>
+
+        <div class="pictures">
+            <div class="numbertext">6 / 10</div>
+            <img alt="photo" src="pictures/gallery_wide_6.png">
+            <div class="title">Four Happiness Meatballs-Multiple Happiness</div>
+        </div>
+
+        <div class="pictures">
+            <div class="numbertext">7 / 10</div>
+            <img alt="photo" src="pictures/gallery_wide_7.png" height="427" width="640">
+            <div class="title">Pineapple Spare Ribs</div>
+        </div>
+
+        <div class="pictures">
+            <div class="numbertext">8 / 10</div>
+            <img alt="photo" src="pictures/gallery_wide_8.png" height="427" width="640">
+            <div class="title">Beef with Cilantro</div>
+        </div>
+
+        <div class="pictures">
+            <div class="numbertext">9 / 10</div>
+            <img alt="photo" src="pictures/gallery_wide_9.png" height="427" width="640">
+            <div class="title">Chicken with pepper and sesame</div>
+        </div>
+
+        <div class="pictures">
+            <div class="numbertext">10 / 10</div>
+            <img alt="photo" src="pictures/gallery_wide_10.png" height="427" width="640">
+            <div class="title">Yam and Corn Pork Rib Soup</div>
+        </div>
+    </div>
+
+    <div class="gallery-controller">
+        <button id="prev-btn">Previous Dish</button>
+        <button id="next-btn">Next Dish</button>
+        <button id="how-to-cook" onclick="howToCook(event)">How to cook?</button>
+        <button id="like-btn" onclick="like()">Like!</button>
+        <span id="like-count">0</span>
+    </div>
+
+    <!--Hover Window-->
+    <div id="window" class="flow-window">
+        <a href="javascript:void(0)" onclick="hidehowToCook()">X</a>
+
+        <!-- Hover text -->
+        <embed class="gallery-flow-text" id="flowTxt" src="menuMethod/recommend8.txt">
+    </div>
+
+
+    <!--After the hover window appears, the background becomes dark-->
+    <div id="shadow" class="flow-Window-shadow"></div>
+
+
+
+
+    <!-- link to the JavaScript file -->
+    <script src="photoGalleryScript.js"></script>
+</body>
+
+</html>
